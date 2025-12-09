@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -54,20 +54,20 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
   justify-items: center;
 }
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -86,12 +86,6 @@
   max-width: 12rem;
 }
 
-.skillCard:hover {
-  border-color: #5784ba;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(87, 132, 186, 0.3);
-}
-
 .skillIcon {
   font-size: 2.5rem;
   color: #5784ba;
@@ -100,4 +94,28 @@
 .skillName {
   color: white;
   font-weight: 500;
+}
+
+.categorySection {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5784ba;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.categoryTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #5784ba, transparent);
 }

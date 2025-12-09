@@ -16,8 +16,8 @@ export default function Navigation() {
           </div>
 
           <div className={styles.desktopLinks}>
-            <Link href="#about" className={styles.navLink}>
-              A propos
+            <Link href="#experience" className={styles.navLink}>
+              Expériences
             </Link>
             <Link href="#skills" className={styles.navLink}>
               Compétences
@@ -42,11 +42,11 @@ export default function Navigation() {
         <div className={`${styles.mobileMenu} ${isOpen ? styles.open : ""}`}>
           <div className={styles.mobileLinks}>
             <Link
-              href="#about"
+              href="#experience"
               onClick={() => setIsOpen(false)}
               className={styles.mobileLink}
             >
-              A propos
+              Expériences
             </Link>
             <Link
               href="#skills"

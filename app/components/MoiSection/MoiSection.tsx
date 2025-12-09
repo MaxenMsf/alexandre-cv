@@ -15,11 +15,12 @@ export default function MoiSection() {
           <Typewriter />
 
           <p className={styles.description}>
-            Bienvenue sur mon portfolio ! Passionné par le développement web, je
+            Bienvenue sur mon CV en ligne ! Passionné par le développement web, je
             crée des sites et des applications modernes et performants. Explorez
             mes compétences, découvrez mes projets et n&apos;hésitez pas à me
-            contacter je recherche actuellement un stage de 8 à 10 semaines à
-            partir du 28 avril 2025.
+            contacter.<br></br>
+            Je possède actuellement un DUT informatique.<br></br>
+            Je ne recherche pas de stage actuellement.
           </p>
 
           <div className={styles.socialLinks}>
@@ -33,15 +34,6 @@ export default function MoiSection() {
               <i className="fa-brands fa-github"></i>
             </a>
             <a
-              href="https://gitlab.univ-artois.fr/alexandre_mione"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.socialLink}
-              aria-label="GitLab"
-            >
-              <i className="fa-brands fa-gitlab"></i>
-            </a>
-            <a
               href="https://www.linkedin.com/in/alexandre-mione-526979180/"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,9 +44,12 @@ export default function MoiSection() {
             </a>
           </div>
 
-          <div>
+          <div className={styles.buttonGroup}>
             <a href="mailto:alexandremione@gmail.com">
               <button className={styles.button}>Contactez-moi</button>
+            </a>
+            <a href="/CV.png" download>
+              <button className={styles.buttonSecondary}>Télécharger mon CV</button>
             </a>
           </div>
         </div>
@@ -63,8 +58,8 @@ export default function MoiSection() {
           <div className={styles.imageWrapper}>
             <div className={styles.imageGlow} />
             <Image
-              src="/profil.webp"
-              alt="Photo de profil"
+              src="/alexandre.png"
+              alt="Photo de profil Alexandre MIONE"
               fill
               sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
               className={styles.image}

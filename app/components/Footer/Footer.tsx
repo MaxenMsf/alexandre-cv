@@ -14,7 +14,6 @@ export default function Footer() {
           >
             Alexandre Mione
           </a>{" "}
-          © 2025 Tout droit réservé
         </span>
       </div>
     </footer>
