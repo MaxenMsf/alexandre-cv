@@ -64,6 +64,59 @@
   line-height: 1.75;
 }
 
+.infoCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .infoCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.infoCard {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: linear-gradient(to bottom right, rgba(87, 132, 186, 0.15), transparent);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(87, 132, 186, 0.3);
+  transition: all 0.3s;
+}
+
+.infoIcon {
+  font-size: 2rem;
+  color: #5784ba;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+}
+
+.infoContent {
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5784ba;
+  margin-bottom: 0.5rem;
+}
+
+.infoText {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.infoSubtext {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .socialLinks {
   display: flex;
   gap: 1.5rem;

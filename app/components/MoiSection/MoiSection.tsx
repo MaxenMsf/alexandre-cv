@@ -18,10 +18,32 @@ export default function MoiSection() {
             Bienvenue sur mon CV en ligne ! Passionné par le développement web, je
             crée des sites et des applications modernes et performants. Explorez
             mes compétences, découvrez mes projets et n&apos;hésitez pas à me
-            contacter.<br></br>
-            Je possède actuellement un DUT informatique.<br></br>
-            Je ne recherche pas de stage actuellement.
+            contacter.
           </p>
+
+          <div className={styles.infoCards}>
+            <div className={styles.infoCard}>
+              <div className={styles.infoIcon}>
+                <i className="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div className={styles.infoContent}>
+                <h3 className={styles.infoTitle}>Dernier diplôme obtenu</h3>
+                <p className={styles.infoText}>DUT Informatique</p>
+                <p className={styles.infoSubtext}>2023 - 2025</p>
+              </div>
+            </div>
+
+            <div className={styles.infoCard}>
+              <div className={styles.infoIcon}>
+                <i className="fa-solid fa-location-dot"></i>
+              </div>
+              <div className={styles.infoContent}>
+                <h3 className={styles.infoTitle}>Mobilité</h3>
+                <p className={styles.infoText}>Région Nord/Pas de Calais</p>
+                <p className={styles.infoText}>Région Île de France</p>
+              </div>
+            </div>
+          </div>
 
           <div className={styles.socialLinks}>
             <a

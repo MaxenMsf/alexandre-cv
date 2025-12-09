@@ -12,7 +12,9 @@ export default function Navigation() {
       <nav className={styles.nav}>
         <div className={styles.navContainer}>
           <div className={styles.logo}>
-            <span>Alexandre MIONE</span>
+            <Link href="#MoiSection" className={styles.navLink}>
+              <span>Alexandre MIONE</span>
+            </Link>
           </div>
 
           <div className={styles.desktopLinks}>
