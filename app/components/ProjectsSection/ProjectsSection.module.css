@@ -91,3 +91,22 @@
 .projectLink:hover {
   text-decoration: underline;
 }
+
+.downloadLink {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(87, 132, 186, 0.2);
+  color: #5784ba;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+  border: 1px solid rgba(87, 132, 186, 0.3);
+}
+
+.downloadLink:hover {
+  background-color: rgba(87, 132, 186, 0.3);
+  border-color: #5784ba;
+  text-decoration: none;
+}
