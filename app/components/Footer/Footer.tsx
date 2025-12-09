@@ -1,14 +1,16 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
   return (
-    <footer className="py-8 px-4 border-t border-[#5784BA]/30">
-      <div className="max-w-7xl mx-auto text-center">
-        <span className="text-white/70">
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <span className={styles.text}>
           Créer par{" "}
           <a
             href="https://github.com/MaxenMsf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#5784BA] hover:underline font-medium"
+            className={styles.link}
           >
             Alexandre Mione
           </a>{" "}

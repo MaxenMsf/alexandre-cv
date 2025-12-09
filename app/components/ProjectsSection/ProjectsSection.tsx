@@ -1,3 +1,5 @@
+import styles from "./ProjectsSection.module.css";
+
 interface Project {
   icon: string;
   title: string;
@@ -59,31 +61,26 @@ const projects: Project[] = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="min-h-screen py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-          <span className="text-[#5784BA]">Projets</span>
+    <section id="projects" className={styles.section}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>
+          <span className={styles.highlight}>Projets</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={styles.grid}>
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-[#5784BA]/10 to-transparent p-8 rounded-xl border border-[#5784BA]/30 hover:border-[#5784BA] transition-all hover:scale-105 transform duration-200 hover:shadow-[0_0_30px_#5784BA]/30 flex flex-col"
-            >
-              <div className="text-5xl text-[#5784BA] mb-6">
+            <div key={index} className={styles.projectCard}>
+              <div className={styles.projectIcon}>
                 <i className={`fas ${project.icon}`}></i>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">
-                {project.title}
-              </h3>
-              <p className="text-white/80 leading-relaxed mb-6 flex-grow">
+              <h3 className={styles.projectTitle}>{project.title}</h3>
+              <p className={styles.projectDescription}>
                 {project.description}{" "}
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#5784BA] hover:underline font-medium"
+                  className={styles.projectLink}
                 >
                   Voir le projet
                 </a>

@@ -1,0 +1,31 @@
+.typewriter {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .typewriter {
+    font-size: 1.5rem;
+  }
+}
+
+.highlight {
+  color: #5784ba;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

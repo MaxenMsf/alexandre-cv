@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import styles from "./Typewriter.module.css";
 
 const texts = [
   "Etudiant en informatique",
@@ -43,9 +44,9 @@ export default function Typewriter() {
   }, [charIndex, isDeleting, textIndex]);
 
   return (
-    <div className="text-xl md:text-2xl text-white/90 font-medium mb-6">
-      Je suis un <span className="text-[#5784BA]">{displayText}</span>
-      <span className="animate-pulse">|</span>
+    <div className={styles.typewriter}>
+      Je suis un <span className={styles.highlight}>{displayText}</span>
+      <span className={styles.cursor}>|</span>
     </div>
   );
 }
