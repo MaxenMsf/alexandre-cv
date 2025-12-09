@@ -71,7 +71,7 @@ export default function MoiSection() {
             <a href="mailto:alexandremione@gmail.com">
               <button className={styles.button}>Contactez-moi</button>
             </a>
-            <a href="/CV.png" download>
+            <a href="/CV.webp" download>
               <button className={styles.buttonSecondary}>Télécharger mon CV</button>
             </a>
           </div>
@@ -80,7 +80,7 @@ export default function MoiSection() {
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/alexandre.png"
+              src="/alexandre.webp"
               alt="Photo de profil Alexandre MIONE"
               fill
               sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
