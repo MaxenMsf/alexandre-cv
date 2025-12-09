@@ -10,9 +10,6 @@ const nextConfig: NextConfig = {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 31536000, // Cache d'1 an
   },
-  
-  // Optimisations de build
-  swcMinify: true, // Minification optimisée
 };
 
 export default nextConfig;

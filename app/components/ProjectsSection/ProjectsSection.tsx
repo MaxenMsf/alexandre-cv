@@ -4,7 +4,7 @@ import { Icons } from "../Icons";
 import styles from "./ProjectsSection.module.css";
 
 interface Project {
-  icon: () => JSX.Element;
+  icon: () => React.ReactElement;
   title: string;
   description: string;
   link: string;
