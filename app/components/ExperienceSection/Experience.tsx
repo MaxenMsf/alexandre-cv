@@ -1,3 +1,4 @@
+import { Icons } from "../Icons";
 import styles from "./Experience.module.css";
 
 interface Experience {

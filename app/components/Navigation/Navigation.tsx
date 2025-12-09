@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Icons } from "../Icons";
 import styles from "./Navigation.module.css";
 
 export default function Navigation() {
@@ -37,7 +38,7 @@ export default function Navigation() {
             className={styles.menuButton}
             aria-label="Menu"
           >
-            {isOpen ? "✕" : "☰"}
+            {isOpen ? <Icons.X /> : <Icons.Menu />}
           </button>
         </div>
 

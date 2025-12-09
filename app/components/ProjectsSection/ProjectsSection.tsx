@@ -1,9 +1,10 @@
 "use client";
 
+import { Icons } from "../Icons";
 import styles from "./ProjectsSection.module.css";
 
 interface Project {
-  icon: string;
+  icon: () => JSX.Element;
   title: string;
   description: string;
   link: string;
@@ -12,7 +13,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    icon: "fa-mobile-alt",
+    icon: Icons.Mobile,
     title: "Battleworld Helper",
     description:
       "Application web interactive développée en HTML/CSS/JavaScript pour assister les joueurs du jeu mobile Marvel Strike Force. Propose des outils de calcul, des guides de personnages et des stratégies de team building pour optimiser les performances en jeu.",
@@ -20,21 +21,21 @@ const projects: Project[] = [
     downloadLink: "/roster.csv",
   },
   {
-    icon: "fa-blog",
+    icon: Icons.Blog,
     title: "Blog Guide MSF",
     description:
       "Blog personnel créé from scratch dédié à Marvel Strike Force. Propose des guides détaillés, astuces et tutoriels pour aider la communauté francophone du jeu. Développé avec HTML/CSS/JavaScript.",
     link: "https://maxenmsf.github.io/guide-msf/index.html",
   },
   {
-    icon: "fa-gamepad",
+    icon: Icons.Gamepad,
     title: "Site de Jeu Web",
     description:
       "Application web de jeu interactive développée avec Flask. Propose une multitude de minijeux sur le thème Marvel.",
     link: "https://github.com/MaxenMsf/MSFdle",
   },
   {
-    icon: "fa-laptop-code",
+    icon: Icons.Laptop,
     title: "CV en Ligne - Portfolio",
     description:
       "Ce site web que vous visitez actuellement ! Développé avec Next.js, React et TypeScript. Présente mes compétences, expériences et projets de manière moderne et interactive avec animations et design responsive.",
@@ -59,7 +60,7 @@ export default function ProjectsSection() {
               style={{ cursor: "pointer" }}
             >
               <div className={styles.projectIcon}>
-                <i className={`fas ${project.icon}`}></i>
+                <project.icon />
               </div>
               <h3 className={styles.projectTitle}>{project.title}</h3>
               <p className={styles.projectDescription}>

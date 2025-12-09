@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Typewriter from "../Typewriter/Typewriter";
+import { Icons } from "../Icons";
 import styles from "./MoiSection.module.css";
 
 export default function MoiSection() {
@@ -24,7 +25,7 @@ export default function MoiSection() {
           <div className={styles.infoCards}>
             <div className={styles.infoCard}>
               <div className={styles.infoIcon}>
-                <i className="fa-solid fa-graduation-cap"></i>
+                <Icons.GraduationCap />
               </div>
               <div className={styles.infoContent}>
                 <h3 className={styles.infoTitle}>Dernier diplôme obtenu</h3>
@@ -35,7 +36,7 @@ export default function MoiSection() {
 
             <div className={styles.infoCard}>
               <div className={styles.infoIcon}>
-                <i className="fa-solid fa-location-dot"></i>
+                <Icons.LocationDot />
               </div>
               <div className={styles.infoContent}>
                 <h3 className={styles.infoTitle}>Mobilité</h3>
@@ -53,7 +54,7 @@ export default function MoiSection() {
               className={styles.socialLink}
               aria-label="GitHub"
             >
-              <i className="fa-brands fa-github"></i>
+              <Icons.GitHub />
             </a>
             <a
               href="https://www.linkedin.com/in/alexandre-mione-526979180/"
@@ -62,7 +63,7 @@ export default function MoiSection() {
               className={styles.socialLink}
               aria-label="LinkedIn"
             >
-              <i className="fa-brands fa-linkedin"></i>
+              <Icons.LinkedIn />
             </a>
           </div>
 
@@ -78,7 +79,6 @@ export default function MoiSection() {
 
         <div className={styles.imageContainer}>
           <div className={styles.imageWrapper}>
-            <div className={styles.imageGlow} />
             <Image
               src="/alexandre.png"
               alt="Photo de profil Alexandre MIONE"
@@ -86,7 +86,7 @@ export default function MoiSection() {
               sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
               className={styles.image}
               priority
-              unoptimized
+              quality={85}
             />
           </div>
         </div>

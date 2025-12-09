@@ -55,7 +55,6 @@
 
 .highlight {
   color: #5784ba;
-  text-shadow: 0 0 10px #5784ba;
 }
 
 .description {
@@ -83,7 +82,7 @@
   background: linear-gradient(to bottom right, rgba(87, 132, 186, 0.15), transparent);
   border-radius: 0.75rem;
   border: 1px solid rgba(87, 132, 186, 0.3);
-  transition: all 0.3s;
+  transition: border-color 0.2s;
 }
 
 .infoIcon {
@@ -125,12 +124,11 @@
 
 .socialLink {
   color: white;
-  transition: all 0.2s;
+  transition: color 0.2s;
 }
 
 .socialLink:hover {
   color: #5784ba;
-  transform: scale(1.1);
 }
 
 .buttonGroup {
@@ -147,13 +145,11 @@
   border-radius: 9999px;
   border: none;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s;
 }
 
 .button:hover {
   background-color: #4673a8;
-  box-shadow: 0 0 20px #5784ba;
-  transform: scale(1.05);
 }
 
 .buttonSecondary {
@@ -164,14 +160,12 @@
   border-radius: 9999px;
   border: 2px solid #5784ba;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .buttonSecondary:hover {
   background-color: #5784ba;
   color: white;
-  box-shadow: 0 0 20px #5784ba;
-  transform: scale(1.05);
 }
 
 .imageContainer {
@@ -203,26 +197,6 @@
   .imageWrapper {
     width: 24rem;
     height: 24rem;
-  }
-}
-
-.imageGlow {
-  position: absolute;
-  inset: 0;
-  background-color: #5784ba;
-  border-radius: 9999px;
-  filter: blur(48px);
-  opacity: 0.3;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.5;
   }
 }
 
